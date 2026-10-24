@@ -1,0 +1,2192 @@
+[
+  {
+    "id": "dbe99a17-5871-43b3-ae39-5dce1de29740",
+    "name": "Check the admin API is up · health",
+    "folder": "Sign in (start here)",
+    "method": "GET",
+    "url": "{{admin_root}}/health",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/health",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "feead421-ea81-4a60-a3eb-4a0bbac2b3fa",
+    "name": "Sign in as admin · login",
+    "folder": "Sign in (start here)",
+    "method": "POST",
+    "url": "{{admin_api}}/login",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/login",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "15360338-0d8d-4e01-a2ce-83d80efabad3",
+    "name": "Who am I · admin-profile",
+    "folder": "Sign in (start here)",
+    "method": "GET",
+    "url": "{{admin_api}}/admin-profile",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/admin-profile",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "1b3ab6a2-4f0a-4df0-a206-9539d460f3f7",
+    "name": "Change my avatar · admin-avatar",
+    "folder": "Sign in (start here)",
+    "method": "POST",
+    "url": "{{admin_api}}/admin-avatar",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/admin-avatar",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "252db26d-6975-4c76-a18d-e1a5d4582c0f",
+    "name": "Change my password · admin-update-password",
+    "folder": "Sign in (start here)",
+    "method": "POST",
+    "url": "{{admin_api}}/admin-update-password",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/admin-update-password",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "f17d3585-8164-48ea-a89e-f391492724c4",
+    "name": "List my page permissions · admin-permissions-list",
+    "folder": "Sign in (start here)",
+    "method": "POST",
+    "url": "{{admin_api}}/admin-permissions-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/admin-permissions-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "650cb945-b196-41e8-a7ed-af96383d2ef0",
+    "name": "Sign in as sub-admin · login",
+    "folder": "Sign in (start here)",
+    "method": "POST",
+    "url": "{{admin_api}}/login",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/login",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "68f54cf8-19c5-4e18-a264-aed3c3a6f5aa",
+    "name": "Who am I (as the sub-admin) · admin-profile",
+    "folder": "Sign in (start here)",
+    "method": "GET",
+    "url": "{{admin_api}}/admin-profile",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/admin-profile",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "7b6736da-d3ab-4ff9-ab83-5b6e94f807ea",
+    "name": "Go back to the tech admin · admin-profile",
+    "folder": "Sign in (start here)",
+    "method": "GET",
+    "url": "{{admin_api}}/admin-profile",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/admin-profile",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "e6259b7b-a0d7-48b1-a007-00b4bf0e8e7a",
+    "name": "Get the pending-actions feed · admin-pending-actions",
+    "folder": "Every page (header and alerts)",
+    "method": "GET",
+    "url": "{{admin_api}}/admin-pending-actions",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/admin-pending-actions",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "986bf481-0388-4b85-a703-d0b9ebe507ee",
+    "name": "Get the chat bubble count · chat-header-notification-count",
+    "folder": "Every page (header and alerts)",
+    "method": "GET",
+    "url": "{{admin_api}}/chat-header-notification-count",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/chat-header-notification-count",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "c63052b7-afbd-4c66-ae59-706823eaa902",
+    "name": "List results due soon or late · result-reminders",
+    "folder": "Every page (header and alerts)",
+    "method": "GET",
+    "url": "{{admin_api}}/result-reminders?horizon=60",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/result-reminders?horizon=60",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "aea930c7-8c9a-4a04-ae1a-43c348257bcb",
+    "name": "Get new chat alerts · chat-alerts",
+    "folder": "Every page (header and alerts)",
+    "method": "GET",
+    "url": "{{admin_root}}/chat-alerts?since={{yesterday_ymd}}T00:00:00.000Z",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/chat-alerts?since={{yesterday_ymd}}T00:00:00.000Z",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "fa7dc9a2-bae9-4d59-a871-cf49c6fe5bc5",
+    "name": "Get the dashboard figures · dashboard-list",
+    "folder": "Command / Overview / Control Deck",
+    "method": "GET",
+    "url": "{{admin_api}}/dashboard-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/dashboard-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "aad92f03-baca-4524-a871-2a8b7e6a5642",
+    "name": "Check wallets against Passbooks · dashboard-books",
+    "folder": "Command / Overview / Control Deck",
+    "method": "GET",
+    "url": "{{admin_api}}/dashboard-books",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/dashboard-books",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "27273747-2d92-4ebd-a244-758041aa79ec",
+    "name": "List chats in the inbox · chat-list-admin",
+    "folder": "Command / Comms / Player Chat",
+    "method": "GET",
+    "url": "{{admin_root}}/chat-list-admin?scope=all&page=1&limit=30",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/chat-list-admin?scope=all&page=1&limit=30",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "884d7ca8-91cc-4262-a363-a0290fe5d09c",
+    "name": "Open a conversation · chat-list",
+    "folder": "Command / Comms / Player Chat",
+    "method": "POST",
+    "url": "{{admin_root}}/chat-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/chat-list",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "cb0594e8-255d-4984-ac5b-3dac3b59ebce",
+    "name": "Accept or take over a chat · chat-accept",
+    "folder": "Command / Comms / Player Chat",
+    "method": "POST",
+    "url": "{{admin_root}}/chat-accept",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/chat-accept",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "bafcb405-ee24-47ba-ab59-eb0a04c4509a",
+    "name": "Send a reply to the player · chat-send-admin",
+    "folder": "Command / Comms / Player Chat",
+    "method": "POST",
+    "url": "{{admin_root}}/chat-send-admin",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/chat-send-admin",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "ebe6d154-3703-4c0b-a926-bd94fac5a6ec",
+    "name": "Send a photo to the player · chat-image-admin",
+    "folder": "Command / Comms / Player Chat",
+    "method": "POST",
+    "url": "{{admin_root}}/chat-image-admin",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/chat-image-admin",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "af07082d-c254-4d0e-a61e-de95ee12aba9",
+    "name": "Get a chat photo · chat-file/:id",
+    "folder": "Command / Comms / Player Chat",
+    "method": "GET",
+    "url": "{{admin_root}}/chat-file/:id",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/chat-file/:id",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "9fee0d22-48ca-486d-ab86-601bb6e8350f",
+    "name": "List chat agents · chat-agents",
+    "folder": "Command / Comms / Player Chat",
+    "method": "GET",
+    "url": "{{admin_root}}/chat-agents",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/chat-agents",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "21c8b4c2-eb94-46cd-a629-aead08a7a981",
+    "name": "Pass a chat to another agent · chat-rotate",
+    "folder": "Command / Comms / Player Chat",
+    "method": "POST",
+    "url": "{{admin_root}}/chat-rotate",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/chat-rotate",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "25f8940e-0918-4cfa-a9db-653d534b02dd",
+    "name": "Close a chat · chat-ticket-close",
+    "folder": "Command / Comms / Player Chat",
+    "method": "POST",
+    "url": "{{admin_root}}/chat-ticket-close",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/chat-ticket-close",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "c6805d01-66e5-4e42-ad09-f5b50becd290",
+    "name": "Turn taking new chats on or off · chat-availability",
+    "folder": "Command / Comms / Player Chat",
+    "method": "POST",
+    "url": "{{admin_root}}/chat-availability",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/chat-availability",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "0514f396-53ce-4a85-acf4-5c87e9a85b28",
+    "name": "Get the chat share-out mode · chat-settings",
+    "folder": "Command / Comms / Player Chat",
+    "method": "GET",
+    "url": "{{admin_root}}/chat-settings",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/chat-settings",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "d30e8a5f-d2c3-42a1-a0ba-72c720cdfe5a",
+    "name": "Set the chat share-out mode · chat-settings",
+    "folder": "Command / Comms / Player Chat",
+    "method": "POST",
+    "url": "{{admin_root}}/chat-settings",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/chat-settings",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "b5bba6b1-ea6d-42e6-a8e9-73e305c38c4e",
+    "name": "Get the live chat summary · chat-monitor/summary",
+    "folder": "Command / Comms / Chat Monitor",
+    "method": "GET",
+    "url": "{{admin_root}}/chat-monitor/summary",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/chat-monitor/summary",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "4a73e887-564f-4a3d-a410-6be9163ef20f",
+    "name": "List chats with their times · chat-monitor/tickets",
+    "folder": "Command / Comms / Chat Monitor",
+    "method": "GET",
+    "url": "{{admin_root}}/chat-monitor/tickets?stage=all&page=1&limit=25",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/chat-monitor/tickets?stage=all&page=1&limit=25",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "6cb3450b-8cb9-4c06-a02f-7fcf1e4660d1",
+    "name": "List chat activity events · chat-monitor/events",
+    "folder": "Command / Comms / Chat Monitor",
+    "method": "GET",
+    "url": "{{admin_root}}/chat-monitor/events?page=1&limit=50",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/chat-monitor/events?page=1&limit=50",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "b7b81b5d-3048-4ecd-a733-cfc92dd7cd5d",
+    "name": "Show one chat's timeline · chat-monitor/ticket/:id",
+    "folder": "Command / Comms / Chat Monitor",
+    "method": "GET",
+    "url": "{{admin_root}}/chat-monitor/ticket/:id",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/chat-monitor/ticket/:id",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "09f8ea27-8092-4b2f-afb7-60642a2caee0",
+    "name": "List every player for a recipient picker · notification-user-list",
+    "folder": "Command / Comms / Notifications",
+    "method": "GET",
+    "url": "{{admin_api}}/notification-user-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/notification-user-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "01ecb617-4aa4-436b-a737-427a8ba284c0",
+    "name": "Send an announcement to one player · notification-store",
+    "folder": "Command / Comms / Notifications",
+    "method": "POST",
+    "url": "{{admin_api}}/notification-store",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/notification-store",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "e74d7011-0b63-43e4-ad5e-106464015fb2",
+    "name": "Send an announcement to every player · notification-store",
+    "folder": "Command / Comms / Notifications",
+    "method": "POST",
+    "url": "{{admin_api}}/notification-store",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/notification-store",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "b7862482-22dc-48f7-a8ac-5d34f2f6d37d",
+    "name": "List sent announcements · notification-list",
+    "folder": "Command / Comms / Notifications",
+    "method": "GET",
+    "url": "{{admin_api}}/notification-list?page=1&limit=20",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/notification-list?page=1&limit=20",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "e327288b-beb3-4987-a0b4-e22be12dbf85",
+    "name": "Delete an announcement · notification-delete",
+    "folder": "Command / Comms / Notifications",
+    "method": "POST",
+    "url": "{{admin_api}}/notification-delete",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/notification-delete",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "98d99af9-65eb-426d-a456-5ec0bb391101",
+    "name": "Mark a chat's messages seen (old console) · seen-message",
+    "folder": "Not on a console page",
+    "method": "POST",
+    "url": "{{admin_api}}/seen-message",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/seen-message",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "aefb25fb-710c-45c2-a5b1-aa4387c81b0a",
+    "name": "Check which players have a password · user-password-status",
+    "folder": "Not on a console page",
+    "method": "POST",
+    "url": "{{admin_api}}/user-password-status",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/user-password-status",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "8d84ce8a-35c2-476f-aeaa-c7e05dd3fd66",
+    "name": "List stake per number on a main session (old) · main-market-gameLoad",
+    "folder": "Not on a console page",
+    "method": "POST",
+    "url": "{{admin_api}}/main-market-gameLoad",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/main-market-gameLoad",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "ebe509ff-87d3-4c50-a36e-f00af23ee072",
+    "name": "List stake per number on a Starline board (old) · kingstarline-market-gameLoad",
+    "folder": "Not on a console page",
+    "method": "POST",
+    "url": "{{admin_api}}/kingstarline-market-gameLoad",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/kingstarline-market-gameLoad",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "86a1d5e3-eb9a-404e-a7c6-0cd3cf6fec20",
+    "name": "List stake per jodi on a Jackpot board (old) · jackport-market-gameLoad",
+    "folder": "Not on a console page",
+    "method": "POST",
+    "url": "{{admin_api}}/jackport-market-gameLoad",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/jackport-market-gameLoad",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "07ce9cb9-1c0f-4bad-a884-08c92c38354b",
+    "name": "List a player's King Jackpot rates · jackpot-market-rate-list-user-waise",
+    "folder": "Not on a console page",
+    "method": "GET",
+    "url": "{{admin_api}}/jackpot-market-rate-list-user-waise?user_id={{player_user_id}}",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/jackpot-market-rate-list-user-waise?user_id={{player_user_id}}",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "42aee3fd-4603-4fdc-ae53-137cc9aae307",
+    "name": "Save a player's King Jackpot rates · king-jackport-market-rate-update-user-waise",
+    "folder": "Not on a console page",
+    "method": "POST",
+    "url": "{{admin_api}}/king-jackport-market-rate-update-user-waise",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/king-jackport-market-rate-update-user-waise",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "402dc63a-fc96-4e0d-a6bf-fb726ad22bf3",
+    "name": "List the universal IP blocks · ip-block-list",
+    "folder": "Not on a console page",
+    "method": "GET",
+    "url": "{{admin_api}}/ip-block-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/ip-block-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "a9836c15-b216-4fbd-a6b5-c9d0d973a11c",
+    "name": "List players last seen in a state · users-in-state",
+    "folder": "Not on a console page",
+    "method": "POST",
+    "url": "{{admin_api}}/users-in-state",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/users-in-state",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "fa5838b8-285a-4e1a-ab8d-febd261250c5",
+    "name": "List players · user-list",
+    "folder": "Players / Application Users / All Players",
+    "method": "GET",
+    "url": "{{admin_api}}/user-list?page=1&limit=10",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/user-list?page=1&limit=10",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "d12b6924-fbb0-4fc2-aaaa-8b6861ec3b70",
+    "name": "Show a player's password · user-password-view",
+    "folder": "Players / Application Users / All Players",
+    "method": "POST",
+    "url": "{{admin_api}}/user-password-view",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/user-password-view",
+    "writeGuard": false,
+    "sensitiveRead": true
+  },
+  {
+    "id": "22faf4bc-3d55-4ea1-affe-70e33e02fdfe",
+    "name": "Tag a player with a colour · user-color-update",
+    "folder": "Players / Application Users / All Players",
+    "method": "POST",
+    "url": "{{admin_api}}/user-color-update",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/user-color-update",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "4da729b8-8e8b-4847-aab2-22b0dcacf390",
+    "name": "Set a player's withdrawal limits · user-withdrawLimit-update",
+    "folder": "Players / Application Users / All Players",
+    "method": "POST",
+    "url": "{{admin_api}}/user-withdrawLimit-update",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/user-withdrawLimit-update",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "668894cb-ffea-4331-a387-7fef3d7d738a",
+    "name": "Add funds to a player's wallet · user-add-amount",
+    "folder": "Players / Application Users / All Players",
+    "method": "POST",
+    "url": "{{admin_api}}/user-add-amount",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/user-add-amount",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "ac70c757-2d72-4048-af99-cc7e2d11c597",
+    "name": "Remove funds from a player's wallet · user-withdraw-amount",
+    "folder": "Players / Application Users / All Players",
+    "method": "POST",
+    "url": "{{admin_api}}/user-withdraw-amount",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/user-withdraw-amount",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "cd575f5b-3156-41f3-abb7-ee45b366c879",
+    "name": "Deactivate a player · user-inactive-active-update",
+    "folder": "Players / Application Users / All Players",
+    "method": "POST",
+    "url": "{{admin_api}}/user-inactive-active-update",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/user-inactive-active-update",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "84995622-3d4c-42f9-a84c-691e335f75d2",
+    "name": "Reactivate a player · user-inactive-active-update",
+    "folder": "Players / Application Users / All Players",
+    "method": "POST",
+    "url": "{{admin_api}}/user-inactive-active-update",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/user-inactive-active-update",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "14ad44b2-a4f9-4cd5-a6e1-07f41b2a6c96",
+    "name": "Reset a player's password · user-reset-password",
+    "folder": "Players / Application Users / All Players",
+    "method": "POST",
+    "url": "{{admin_api}}/user-reset-password",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/user-reset-password",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "1466f733-c739-47a9-a132-cc6e3641c0ad",
+    "name": "List a player's logins · login-history-list",
+    "folder": "Players / Application Users / All Players › Player Login History",
+    "method": "GET",
+    "url": "{{admin_api}}/login-history-list?page=1&limit=10&user_id={{player_user_id}}",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/login-history-list?page=1&limit=10&user_id={{player_user_id}}",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "9aec5789-5310-4ce6-af1c-d268e99eedba",
+    "name": "Create a player account · add-user",
+    "folder": "Players / Application Users / Create Player",
+    "method": "POST",
+    "url": "{{admin_api}}/add-user",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/add-user",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "9f6487eb-b875-4028-a8af-495f0b66ec26",
+    "name": "List active players · user-active-list",
+    "folder": "Players / Application Users / Active Players",
+    "method": "GET",
+    "url": "{{admin_api}}/user-active-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/user-active-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "7bd2c3a4-bda7-47b6-ad11-9d6ab2dbfc20",
+    "name": "List inactive players · user-inactive-list",
+    "folder": "Players / Application Users / Inactive Players",
+    "method": "GET",
+    "url": "{{admin_api}}/user-inactive-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/user-inactive-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "cb697cca-32bb-43d9-a980-3054d6f2d367",
+    "name": "Show who shares a phone or network · login-connections",
+    "folder": "Players / Application Users / Live Sessions",
+    "method": "GET",
+    "url": "{{admin_api}}/login-connections?window=24h",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/login-connections?window=24h",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "68e24528-2882-46f9-a557-171982f29bf9",
+    "name": "Create a sub-admin · admin-create",
+    "folder": "Players / Sub Admins & Roles / Create Sub Admin",
+    "method": "POST",
+    "url": "{{admin_api}}/admin-create",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/admin-create",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "293ce82e-6d7e-4d04-a2fa-e0be308680ca",
+    "name": "List admins (tech admin) · admin-list",
+    "folder": "Players / Sub Admins & Roles / All Sub Admins",
+    "method": "POST",
+    "url": "{{admin_api}}/admin-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/admin-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "67af0631-a791-49cd-a9e7-73797910592f",
+    "name": "List my sub-admins · sub-admin-list",
+    "folder": "Players / Sub Admins & Roles / All Sub Admins",
+    "method": "POST",
+    "url": "{{admin_api}}/sub-admin-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/sub-admin-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "a77c87b2-5a3c-4322-a944-a8a71ce40b9c",
+    "name": "Set a sub-admin's pages · admin-set-permissions",
+    "folder": "Players / Sub Admins & Roles / All Sub Admins",
+    "method": "POST",
+    "url": "{{admin_api}}/admin-set-permissions",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/admin-set-permissions",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "f456163d-0be9-42a4-a40c-f7889aae7ee1",
+    "name": "Deactivate a sub-admin · admin-update-status",
+    "folder": "Players / Sub Admins & Roles / All Sub Admins",
+    "method": "POST",
+    "url": "{{admin_api}}/admin-update-status",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/admin-update-status",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "b49fc2a5-e188-429e-ae09-a313bd7d2dba",
+    "name": "Reactivate a sub-admin · admin-update-status",
+    "folder": "Players / Sub Admins & Roles / All Sub Admins",
+    "method": "POST",
+    "url": "{{admin_api}}/admin-update-status",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/admin-update-status",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "ba255a0c-5246-4cc5-a836-3d8cdf725bec",
+    "name": "List active admins (tech admin) · admin-activelist",
+    "folder": "Players / Sub Admins & Roles / Active Roles",
+    "method": "POST",
+    "url": "{{admin_api}}/admin-activelist",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/admin-activelist",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "f8889075-58f0-4eb0-a7e1-c71049fd8bf4",
+    "name": "List my active sub-admins · sub-admin-active-list",
+    "folder": "Players / Sub Admins & Roles / Active Roles",
+    "method": "POST",
+    "url": "{{admin_api}}/sub-admin-active-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/sub-admin-active-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "86ef006c-b749-4cdb-abd1-e3f2accb77d2",
+    "name": "List inactive admins (tech admin) · admin-inactivelist",
+    "folder": "Players / Sub Admins & Roles / Inactive Roles",
+    "method": "POST",
+    "url": "{{admin_api}}/admin-inactivelist",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/admin-inactivelist",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "ded2a23b-ccca-40be-a118-85c03982fe67",
+    "name": "List my inactive sub-admins · sub-admin-inactive-list",
+    "folder": "Players / Sub Admins & Roles / Inactive Roles",
+    "method": "POST",
+    "url": "{{admin_api}}/sub-admin-inactive-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/sub-admin-inactive-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "cda40ecc-e352-4dcf-aff9-02716896e784",
+    "name": "List pending deposits · deposit-pending-list",
+    "folder": "Treasury / Deposits / Pending",
+    "method": "POST",
+    "url": "{{admin_api}}/deposit-pending-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/deposit-pending-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "2bd9e4e6-a116-46f9-ac65-22276d452b8a",
+    "name": "View a deposit's UTR screenshot · uploads/{{deposit_image}}",
+    "folder": "Treasury / Deposits / Pending",
+    "method": "GET",
+    "url": "{{payment_url}}/uploads/{{deposit_image}}",
+    "resolvedUrl": "https://payment.rcbmatka.com/uploads/{{deposit_image}}",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "72570a16-41a5-4c62-a0b4-6601d0deae01",
+    "name": "Approve a deposit and credit the player · deposit-status-update",
+    "folder": "Treasury / Deposits / Pending",
+    "method": "POST",
+    "url": "{{admin_api}}/deposit-status-update",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/deposit-status-update",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "5efbc1a5-1e4a-46eb-a747-1a9f55dd24fb",
+    "name": "Reject a deposit · deposit-status-update",
+    "folder": "Treasury / Deposits / Pending",
+    "method": "POST",
+    "url": "{{admin_api}}/deposit-status-update",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/deposit-status-update",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "a80b4b7b-6067-420d-aad6-40188a5aa0f1",
+    "name": "List approved deposits · deposit-success-list",
+    "folder": "Treasury / Deposits / Approved",
+    "method": "POST",
+    "url": "{{admin_api}}/deposit-success-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/deposit-success-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "78edc86f-2f99-48f5-ae43-62110605ec42",
+    "name": "List rejected and failed deposits · deposit-reject-list",
+    "folder": "Treasury / Deposits / Rejected",
+    "method": "POST",
+    "url": "{{admin_api}}/deposit-reject-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/deposit-reject-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "89acc8c0-1fb4-4980-af38-3440972cb601",
+    "name": "List daily totals of successful deposits · deposit-list-report",
+    "folder": "Treasury / Deposits / Date-wise Report",
+    "method": "POST",
+    "url": "{{admin_api}}/deposit-list-report",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/deposit-list-report",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "01addc8c-34ea-432c-a977-5f5937212a79",
+    "name": "Split one day's deposits by gateway · deposit-list-report-getway",
+    "folder": "Treasury / Deposits / Date-wise Report › Deposit Detail",
+    "method": "POST",
+    "url": "{{admin_api}}/deposit-list-report-getway",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/deposit-list-report-getway",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "3998b29f-d951-4fcd-acd7-bfac25b9db51",
+    "name": "List daily totals of staff fund additions · admin-deposit-datewise",
+    "folder": "Treasury / Deposits / Admin Date-wise Report",
+    "method": "POST",
+    "url": "{{admin_api}}/admin-deposit-datewise?page=1",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/admin-deposit-datewise?page=1",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "f6939a1a-5e8e-4495-ac80-c1a0e7cdccde",
+    "name": "List one day's staff fund additions · admin-deposit-datewiseAll",
+    "folder": "Treasury / Deposits / Admin Date-wise Report › Admin Deposit Detail",
+    "method": "POST",
+    "url": "{{admin_api}}/admin-deposit-datewiseAll",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/admin-deposit-datewiseAll",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "2a7ce99c-58e6-459d-ac1e-d4701947da20",
+    "name": "List one day's successful deposits · deposit-list-report-getway-wise-all",
+    "folder": "Treasury / Deposits / Gateway-wise Report",
+    "method": "POST",
+    "url": "{{admin_api}}/deposit-list-report-getway-wise-all",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/deposit-list-report-getway-wise-all",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "59bbf1aa-1883-44ca-a02b-d9c7810ff57a",
+    "name": "List pending withdrawals · withdraw-pending-list",
+    "folder": "Treasury / Withdrawals / Pending",
+    "method": "POST",
+    "url": "{{admin_api}}/withdraw-pending-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/withdraw-pending-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "b509ee8e-45ba-4267-aa84-35e4022585c5",
+    "name": "Pre-approve withdrawals for payout · Pending-Withdraw-Approve",
+    "folder": "Treasury / Withdrawals / Pending",
+    "method": "POST",
+    "url": "{{admin_api}}/Pending-Withdraw-Approve",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/Pending-Withdraw-Approve",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "29b51861-dea1-4811-aef7-76ee7d24c434",
+    "name": "List pre-approved withdrawals · withdraw-pending-approve-list",
+    "folder": "Treasury / Withdrawals / Pre-Approved",
+    "method": "POST",
+    "url": "{{admin_api}}/withdraw-pending-approve-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/withdraw-pending-approve-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "5a4ceca8-2c93-4c21-afd1-7871bf133692",
+    "name": "Send the payout to the bank through PG · payout/index.php",
+    "folder": "Treasury / Withdrawals / Pre-Approved",
+    "method": "GET",
+    "url": "{{payment_url}}/payout/index.php?orderid={{withdraw_order_id}}",
+    "resolvedUrl": "https://payment.rcbmatka.com/payout/index.php?orderid={{withdraw_order_id}}",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "01617d4d-a694-4724-a5ae-835329a53b5e",
+    "name": "Check the payout at PG · payout/checkstatus.php",
+    "folder": "Treasury / Withdrawals / Pre-Approved",
+    "method": "GET",
+    "url": "{{payment_url}}/payout/checkstatus.php?orderid={{withdraw_order_id}}",
+    "resolvedUrl": "https://payment.rcbmatka.com/payout/checkstatus.php?orderid={{withdraw_order_id}}",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "8e790662-bdae-41d9-a498-ecf80a367a8a",
+    "name": "Mark a withdrawal paid by hand · withdraw-status-update",
+    "folder": "Treasury / Withdrawals / Pre-Approved",
+    "method": "POST",
+    "url": "{{admin_api}}/withdraw-status-update",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/withdraw-status-update",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "0a321f55-ac25-4814-a052-a4aef730d7be",
+    "name": "Reject a withdrawal and refund the player · withdraw-status-update",
+    "folder": "Treasury / Withdrawals / Pre-Approved",
+    "method": "POST",
+    "url": "{{admin_api}}/withdraw-status-update",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/withdraw-status-update",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "cfdb04e9-df1b-4065-ab84-f16ce68aec67",
+    "name": "List paid withdrawals · withdraw-success-list",
+    "folder": "Treasury / Withdrawals / Approved",
+    "method": "POST",
+    "url": "{{admin_api}}/withdraw-success-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/withdraw-success-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "d4fbbd53-002c-4569-a72a-1a96989bdea9",
+    "name": "View a player's profile · user-view",
+    "folder": "Treasury / Withdrawals / Approved › Player Ledger",
+    "method": "GET",
+    "url": "{{admin_api}}/user-view?user_id={{player_user_id}}",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/user-view?user_id={{player_user_id}}",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "b27083a8-3579-4f28-a8b1-586f98323da7",
+    "name": "List a player's Passbook rows · ledger-list",
+    "folder": "Treasury / Withdrawals / Approved › Player Ledger",
+    "method": "POST",
+    "url": "{{admin_api}}/ledger-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/ledger-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "d1a2beba-a2a2-4417-a4df-0fad4f59c11f",
+    "name": "List rejected withdrawals · withdraw-reject-list",
+    "folder": "Treasury / Withdrawals / Rejected",
+    "method": "POST",
+    "url": "{{admin_api}}/withdraw-reject-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/withdraw-reject-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "a0d3ac71-bc8d-4834-a395-f40bc3390b08",
+    "name": "List daily totals of paid withdrawals · withdraw-list-report",
+    "folder": "Treasury / Withdrawals / Date-wise Report",
+    "method": "POST",
+    "url": "{{admin_api}}/withdraw-list-report",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/withdraw-list-report",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "9a5ca2ed-e672-4b90-a09f-1961808a5713",
+    "name": "List one day's paid withdrawals · withdraw-list-report-all",
+    "folder": "Treasury / Withdrawals / Date-wise Report › Withdrawal Detail",
+    "method": "POST",
+    "url": "{{admin_api}}/withdraw-list-report-all",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/withdraw-list-report-all",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "be055ce6-156e-4b3b-a003-d09dd1fd9a9c",
+    "name": "List daily totals of staff fund removals · admin-withdraw-datewise",
+    "folder": "Treasury / Withdrawals / Admin Date-wise Report",
+    "method": "POST",
+    "url": "{{admin_api}}/admin-withdraw-datewise?page=1",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/admin-withdraw-datewise?page=1",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "abeee4f5-53aa-45b2-af90-9ec4b38dade6",
+    "name": "List one day's staff fund removals · admin-withdraw-datewiseAll",
+    "folder": "Treasury / Withdrawals / Admin Date-wise Report › Admin Withdrawal Detail",
+    "method": "POST",
+    "url": "{{admin_api}}/admin-withdraw-datewiseAll",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/admin-withdraw-datewiseAll",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "d2cd30ed-dbd3-4a5b-a301-7deaaf988ef2",
+    "name": "List bank accounts awaiting verification · bankAccount-pending-list",
+    "folder": "Treasury / Bank Accounts / Pending",
+    "method": "POST",
+    "url": "{{admin_api}}/bankAccount-pending-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/bankAccount-pending-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "7e71d2da-8845-4197-a1f6-a0b7fa335f01",
+    "name": "Verify a bank account · bankAccount-status-update",
+    "folder": "Treasury / Bank Accounts / Pending",
+    "method": "POST",
+    "url": "{{admin_api}}/bankAccount-status-update",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/bankAccount-status-update",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "3e7d5fe6-4b19-464a-a059-c0de8a7e1230",
+    "name": "Decline a bank account · bankAccount-status-update",
+    "folder": "Treasury / Bank Accounts / Pending",
+    "method": "POST",
+    "url": "{{admin_api}}/bankAccount-status-update",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/bankAccount-status-update",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "844e4c98-dd49-40c1-aa39-54fe45f01f16",
+    "name": "List a bank account's change history · bankAccount-history",
+    "folder": "Treasury / Bank Accounts / Pending",
+    "method": "POST",
+    "url": "{{admin_api}}/bankAccount-history",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/bankAccount-history",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "48c6c42c-0105-401e-a5fd-c5aec00f32b7",
+    "name": "List verified bank accounts · bankAccount-success-list",
+    "folder": "Treasury / Bank Accounts / Approved",
+    "method": "POST",
+    "url": "{{admin_api}}/bankAccount-success-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/bankAccount-success-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "85aa293d-cbe5-47f2-ab43-99f027d54c69",
+    "name": "List declined bank accounts · bankAccount-reject-list",
+    "folder": "Treasury / Bank Accounts / Rejected",
+    "method": "POST",
+    "url": "{{admin_api}}/bankAccount-reject-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/bankAccount-reject-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "81d8c07e-6daf-4de1-adeb-7f30bd1cdb33",
+    "name": "List pay-in gateways · payinSetting-list",
+    "folder": "Treasury / Gateways / PayIn Gateway Settings",
+    "method": "GET",
+    "url": "{{admin_api}}/payinSetting-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/payinSetting-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "94390682-5ff7-40f4-ae0c-7adb88fee26c",
+    "name": "Add a pay-in gateway · payinSetting-store",
+    "folder": "Treasury / Gateways / PayIn Gateway Settings",
+    "method": "POST",
+    "url": "{{admin_api}}/payinSetting-store",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/payinSetting-store",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "b07aa3e7-3c5b-458b-ac5a-162d93465494",
+    "name": "Read one pay-in gateway · payinSetting-edit",
+    "folder": "Treasury / Gateways / PayIn Gateway Settings",
+    "method": "POST",
+    "url": "{{admin_api}}/payinSetting-edit",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/payinSetting-edit",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "00d7ad2c-1202-474a-ac8c-56d5d3e68eff",
+    "name": "Update a pay-in gateway · payinSetting-update",
+    "folder": "Treasury / Gateways / PayIn Gateway Settings",
+    "method": "POST",
+    "url": "{{admin_api}}/payinSetting-update",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/payinSetting-update",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "d62d53aa-d7b0-4e79-ab63-caa911595e00",
+    "name": "Switch a pay-in gateway on or off · payinSetting-status-update",
+    "folder": "Treasury / Gateways / PayIn Gateway Settings",
+    "method": "POST",
+    "url": "{{admin_api}}/payinSetting-status-update",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/payinSetting-status-update",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "2084b961-30ae-456f-a7e2-bc3000d2932b",
+    "name": "Read bonus settings and totals · bonus-overview",
+    "folder": "Treasury / Bonuses / Bonuses & Referrals",
+    "method": "GET",
+    "url": "{{admin_api}}/bonus-overview",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/bonus-overview",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "62b69275-8375-4464-abbc-62f3867a761b",
+    "name": "Change the bonus and referral rules · bonus-settings-update",
+    "folder": "Treasury / Bonuses / Bonuses & Referrals",
+    "method": "POST",
+    "url": "{{admin_api}}/bonus-settings-update",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/bonus-settings-update",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "fafc707d-2e7a-4a3c-a5d9-82a47a068cfe",
+    "name": "List bonuses · bonus-ledger",
+    "folder": "Treasury / Bonuses / Bonuses & Referrals",
+    "method": "GET",
+    "url": "{{admin_api}}/bonus-ledger?status=locked&page=1&limit=20",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/bonus-ledger?status=locked&page=1&limit=20",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "ee387670-1baf-40f7-a6a5-8312b5b60a9a",
+    "name": "List referrals · referral-ledger",
+    "folder": "Treasury / Bonuses / Bonuses & Referrals",
+    "method": "GET",
+    "url": "{{admin_api}}/referral-ledger?status=joined&page=1&limit=20",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/referral-ledger?status=joined&page=1&limit=20",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "89a94ca9-04de-4ca8-a476-3fede7e0ad16",
+    "name": "Void a locked bonus · bonus-void",
+    "folder": "Treasury / Bonuses / Bonuses & Referrals",
+    "method": "POST",
+    "url": "{{admin_api}}/bonus-void",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/bonus-void",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "4d05cdb1-854c-4975-a05e-4424f6a3aa6b",
+    "name": "Void a waiting referral · referral-void",
+    "folder": "Treasury / Bonuses / Bonuses & Referrals",
+    "method": "POST",
+    "url": "{{admin_api}}/referral-void",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/referral-void",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "341a2ec5-c02d-4607-a638-55becb9ac982",
+    "name": "Link a player to a referral code · referral-link",
+    "folder": "Treasury / Bonuses / Bonuses & Referrals",
+    "method": "POST",
+    "url": "{{admin_api}}/referral-link",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/referral-link",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "acf8e1d5-0e68-43b1-a27f-958d910b67c7",
+    "name": "Re-check a player's bonuses now · bonus-settle-user",
+    "folder": "Treasury / Bonuses / Bonuses & Referrals",
+    "method": "POST",
+    "url": "{{admin_api}}/bonus-settle-user",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/bonus-settle-user",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "75c18045-4919-4dfb-abf6-8e2af6cb175a",
+    "name": "List main market boards · market-list",
+    "folder": "Arena / Markets / Main Market",
+    "method": "POST",
+    "url": "{{admin_api}}/market-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/market-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "db5c3246-da45-4983-a6c1-2fb0b83f17f4",
+    "name": "View one market board · market-view",
+    "folder": "Arena / Markets / Main Market",
+    "method": "POST",
+    "url": "{{admin_api}}/market-view",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/market-view",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "1701af4c-d015-46e5-a3e9-5eef21e97645",
+    "name": "Open a new main market board · add-market",
+    "folder": "Arena / Markets / Main Market",
+    "method": "POST",
+    "url": "{{admin_api}}/add-market",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/add-market",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "be51dfc8-be7a-4c34-ad92-d0ef93715f63",
+    "name": "Retire a market board · market-retire",
+    "folder": "Arena / Markets / Main Market",
+    "method": "POST",
+    "url": "{{admin_api}}/market-retire",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/market-retire",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "cb6b0740-e34c-4855-a8b9-66dceb945698",
+    "name": "Bring a retired board back · market-retire",
+    "folder": "Arena / Markets / Main Market",
+    "method": "POST",
+    "url": "{{admin_api}}/market-retire",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/market-retire",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "73d0008a-5da7-4509-a7f4-c4d7e612a936",
+    "name": "Edit a board's hours and days · market-update",
+    "folder": "Arena / Markets / Main Market",
+    "method": "POST",
+    "url": "{{admin_api}}/market-update",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/market-update",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "08b72fdd-d48c-425e-a9fa-beb7c62bc90d",
+    "name": "List King Starline boards · market-list",
+    "folder": "Arena / Markets / King Starline",
+    "method": "POST",
+    "url": "{{admin_api}}/market-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/market-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "62b81d7b-5576-42dc-a277-d2bcc8c192ed",
+    "name": "Open a new King Starline board · add-market",
+    "folder": "Arena / Markets / King Starline",
+    "method": "POST",
+    "url": "{{admin_api}}/add-market",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/add-market",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "dde1f8e5-5608-4736-ac2b-cce682b8ebf7",
+    "name": "List King Jackpot boards · market-list",
+    "folder": "Arena / Markets / King Jackpot",
+    "method": "POST",
+    "url": "{{admin_api}}/market-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/market-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "cd2e8bb4-4d53-4afc-a3b3-4b7dfcdf3513",
+    "name": "Open a new King Jackpot board · add-market",
+    "folder": "Arena / Markets / King Jackpot",
+    "method": "POST",
+    "url": "{{admin_api}}/add-market",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/add-market",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "4d7a7b48-0250-4d5f-a31e-e2612f78c038",
+    "name": "List main boards for Game Load · market-list-gameload",
+    "folder": "Arena / Game Load / Main Market Load",
+    "method": "POST",
+    "url": "{{admin_api}}/market-list-gameload",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/market-list-gameload",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "0c2d2c8f-28e5-4c4e-a4b4-65235b8ea76e",
+    "name": "List the 220 panas with their ank · app-pana-number-list",
+    "folder": "Arena / Game Load / Main Market Load",
+    "method": "GET",
+    "url": "{{admin_api}}/app-pana-number-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/app-pana-number-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "7bd4795e-a02c-4297-a70b-87ba9b3e2214",
+    "name": "Read a main board's payout book · market-game-book",
+    "folder": "Arena / Game Load / Main Market Load",
+    "method": "POST",
+    "url": "{{admin_api}}/market-game-book",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/market-game-book",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "eb70a49c-efad-4bd6-ae23-13823e139b73",
+    "name": "List King Starline boards for Game Load · market-list-gameload",
+    "folder": "Arena / Game Load / King Starline Load",
+    "method": "POST",
+    "url": "{{admin_api}}/market-list-gameload",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/market-list-gameload",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "1877c42b-188e-4b81-a458-13285dff9e0a",
+    "name": "Read a King Starline board's payout book · market-game-book",
+    "folder": "Arena / Game Load / King Starline Load",
+    "method": "POST",
+    "url": "{{admin_api}}/market-game-book",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/market-game-book",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "11612653-5471-4593-acca-72029487d62f",
+    "name": "List King Jackpot boards for Game Load · market-list-gameload",
+    "folder": "Arena / Game Load / King Jackpot Load",
+    "method": "POST",
+    "url": "{{admin_api}}/market-list-gameload",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/market-list-gameload",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "af64a109-3e93-4706-a70c-50893257a130",
+    "name": "Read a King Jackpot board's payout book · market-game-book",
+    "folder": "Arena / Game Load / King Jackpot Load",
+    "method": "POST",
+    "url": "{{admin_api}}/market-game-book",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/market-game-book",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "dc14de85-2672-4ded-a2db-02952dd31a72",
+    "name": "List main boards to declare · market-list-result",
+    "folder": "Arena / Declare Result / Main Market Result",
+    "method": "POST",
+    "url": "{{admin_api}}/market-list-result",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/market-list-result",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "f34bad56-7ade-48a0-a0b7-5d82f4625128",
+    "name": "Price an open result (dry run) · show-mainmarket-winner-lists",
+    "folder": "Arena / Declare Result / Main Market Result",
+    "method": "POST",
+    "url": "{{admin_api}}/show-mainmarket-winner-lists",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/show-mainmarket-winner-lists",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "8c979011-73b8-427c-aac5-8b20c8390066",
+    "name": "Void waiting bids before declaring · market-bet-aviod",
+    "folder": "Arena / Declare Result / Main Market Result",
+    "method": "POST",
+    "url": "{{admin_api}}/market-bet-aviod",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/market-bet-aviod",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "9a3424e5-4ff1-4f71-af38-d31c812f39da",
+    "name": "Declare a main market open result · main-market-result-declear",
+    "folder": "Arena / Declare Result / Main Market Result",
+    "method": "POST",
+    "url": "{{admin_api}}/main-market-result-declear",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/main-market-result-declear",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "5a5183f5-4f2d-4190-a531-624c6f2e2e48",
+    "name": "Price a close result (dry run) · show-mainmarket-winner-lists",
+    "folder": "Arena / Declare Result / Main Market Result",
+    "method": "POST",
+    "url": "{{admin_api}}/show-mainmarket-winner-lists",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/show-mainmarket-winner-lists",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "aaafc21c-7e48-4f20-a2e8-116821ff73a3",
+    "name": "Declare a main market close result · main-market-result-declear",
+    "folder": "Arena / Declare Result / Main Market Result",
+    "method": "POST",
+    "url": "{{admin_api}}/main-market-result-declear",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/main-market-result-declear",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "d19e7ea4-54d9-4014-a7ab-b0ff44791a6e",
+    "name": "List main results declared on a day · market-declared-result-lists",
+    "folder": "Arena / Declare Result / Main Market Result",
+    "method": "POST",
+    "url": "{{admin_api}}/market-declared-result-lists",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/market-declared-result-lists",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "cffda6a9-0605-4aa0-a723-3828e7941716",
+    "name": "Revert a main market close result · main-open-close-market-bet-revert",
+    "folder": "Arena / Declare Result / Main Market Result",
+    "method": "POST",
+    "url": "{{admin_api}}/main-open-close-market-bet-revert",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/main-open-close-market-bet-revert",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "40afc8ef-ef97-4b94-a8ce-f213286bba15",
+    "name": "Revert a main market open result · main-open-close-market-bet-revert",
+    "folder": "Arena / Declare Result / Main Market Result",
+    "method": "POST",
+    "url": "{{admin_api}}/main-open-close-market-bet-revert",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/main-open-close-market-bet-revert",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "20022a52-8631-472b-aa5d-c3d6b0819e53",
+    "name": "List King Starline boards to declare · market-list-result",
+    "folder": "Arena / Declare Result / King Starline Result",
+    "method": "POST",
+    "url": "{{admin_api}}/market-list-result",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/market-list-result",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "8b24ffe4-23a0-4432-ad7b-9d129b12a1d7",
+    "name": "Price a King Starline result (dry run) · show-starLinemarket-winner-lists",
+    "folder": "Arena / Declare Result / King Starline Result",
+    "method": "POST",
+    "url": "{{admin_api}}/show-starLinemarket-winner-lists",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/show-starLinemarket-winner-lists",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "65c0a8b1-118f-4386-ab49-15dc6b277636",
+    "name": "Declare a King Starline result · starline-market-result-declear",
+    "folder": "Arena / Declare Result / King Starline Result",
+    "method": "POST",
+    "url": "{{admin_api}}/starline-market-result-declear",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/starline-market-result-declear",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "a14506a0-0c2d-41dd-a265-0b0ef78cd7c0",
+    "name": "List King Starline results declared on a day · market-declared-result-lists",
+    "folder": "Arena / Declare Result / King Starline Result",
+    "method": "POST",
+    "url": "{{admin_api}}/market-declared-result-lists",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/market-declared-result-lists",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "ec45f033-5654-4517-a7b4-6d72efd4e097",
+    "name": "Revert a King Starline result · main-market-bet-revert",
+    "folder": "Arena / Declare Result / King Starline Result",
+    "method": "POST",
+    "url": "{{admin_api}}/main-market-bet-revert",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/main-market-bet-revert",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "d458b674-69a2-4f45-a8d5-737d47e7fe52",
+    "name": "List King Jackpot boards to declare · market-list-result",
+    "folder": "Arena / Declare Result / King Jackpot Result",
+    "method": "POST",
+    "url": "{{admin_api}}/market-list-result",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/market-list-result",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "c7a94ebf-2c34-476a-a524-144e04b9af80",
+    "name": "Price a King Jackpot jodi (dry run) · show-kingJacportmarket-winner-lists",
+    "folder": "Arena / Declare Result / King Jackpot Result",
+    "method": "POST",
+    "url": "{{admin_api}}/show-kingJacportmarket-winner-lists",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/show-kingJacportmarket-winner-lists",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "2b34feb3-381a-467b-a8d7-b883260abf18",
+    "name": "Declare a King Jackpot result · kingJackport-market-result-declear",
+    "folder": "Arena / Declare Result / King Jackpot Result",
+    "method": "POST",
+    "url": "{{admin_api}}/kingJackport-market-result-declear",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/kingJackport-market-result-declear",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "4a9bfaf6-5a2f-4ba2-a36f-45c6078b1abe",
+    "name": "List King Jackpot results declared on a day · market-declared-result-lists",
+    "folder": "Arena / Declare Result / King Jackpot Result",
+    "method": "POST",
+    "url": "{{admin_api}}/market-declared-result-lists",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/market-declared-result-lists",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "05e1b7e7-b6e9-4c0e-a9d2-436f42ceec8b",
+    "name": "Revert a King Jackpot result · main-market-bet-revert",
+    "folder": "Arena / Declare Result / King Jackpot Result",
+    "method": "POST",
+    "url": "{{admin_api}}/main-market-bet-revert",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/main-market-bet-revert",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "540217cf-9da6-4a92-a58c-92802e54c313",
+    "name": "Load the desk's markets and games · result-desk-meta",
+    "folder": "Arena / Declare Result / Result Desk",
+    "method": "GET",
+    "url": "{{admin_api}}/result-desk-meta",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/result-desk-meta",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "0203698a-529b-4470-ac63-4c052d7ca8ae",
+    "name": "Find declared results · result-desk-results",
+    "folder": "Arena / Declare Result / Result Desk",
+    "method": "POST",
+    "url": "{{admin_api}}/result-desk-results",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/result-desk-results",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "db6b2352-36c5-40cd-a487-b3900c5bdeeb",
+    "name": "Preview changing a declared result · result-desk-result-preview",
+    "folder": "Arena / Declare Result / Result Desk",
+    "method": "POST",
+    "url": "{{admin_api}}/result-desk-result-preview",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/result-desk-result-preview",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "6a1757c4-d669-416b-a83b-df56bfd308a4",
+    "name": "Change a declared result · result-desk-result-change",
+    "folder": "Arena / Declare Result / Result Desk",
+    "method": "POST",
+    "url": "{{admin_api}}/result-desk-result-change",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/result-desk-result-change",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "da7c7eea-4c4d-4b43-a126-a0a59569eaa4",
+    "name": "Find bids · result-desk-bids",
+    "folder": "Arena / Declare Result / Result Desk",
+    "method": "POST",
+    "url": "{{admin_api}}/result-desk-bids",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/result-desk-bids",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "4dba12a7-d7fe-44ff-a18e-629d75fdfde3",
+    "name": "Preview editing a bid · result-desk-bid-preview",
+    "folder": "Arena / Declare Result / Result Desk",
+    "method": "POST",
+    "url": "{{admin_api}}/result-desk-bid-preview",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/result-desk-bid-preview",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "20106ff1-f4e8-4a43-a534-cebb83cf0e26",
+    "name": "Edit a bid's game, numbers or stake · result-desk-bid-edit",
+    "folder": "Arena / Declare Result / Result Desk",
+    "method": "POST",
+    "url": "{{admin_api}}/result-desk-bid-edit",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/result-desk-bid-edit",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "9a84db29-d73a-4ff2-a4b9-c1f51fe7b709",
+    "name": "Preview voiding a bid · result-desk-void-preview",
+    "folder": "Arena / Declare Result / Result Desk",
+    "method": "POST",
+    "url": "{{admin_api}}/result-desk-void-preview",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/result-desk-void-preview",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "3e6ee656-ee56-422e-a094-c0197f1beb5f",
+    "name": "Void a bid · result-desk-bid-void",
+    "folder": "Arena / Declare Result / Result Desk",
+    "method": "POST",
+    "url": "{{admin_api}}/result-desk-bid-void",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/result-desk-bid-void",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "53382c5f-bde1-43bc-a4d9-b728f331e145",
+    "name": "List the change log · result-desk-changes",
+    "folder": "Arena / Declare Result / Result Desk",
+    "method": "POST",
+    "url": "{{admin_api}}/result-desk-changes",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/result-desk-changes",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "782eaa80-0da5-458e-a921-229dadcd701f",
+    "name": "List main market rates · main-market-rate-list",
+    "folder": "Arena / Payout Rates / All Game Rates",
+    "method": "GET",
+    "url": "{{admin_api}}/main-market-rate-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/main-market-rate-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "7ea820d4-93df-460f-a649-7a9788f5715c",
+    "name": "Save main market rates · main-market-rate-update",
+    "folder": "Arena / Payout Rates / All Game Rates",
+    "method": "POST",
+    "url": "{{admin_api}}/main-market-rate-update",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/main-market-rate-update",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "08f648fd-68b1-4bc1-a883-f8580b3ccad6",
+    "name": "List King Starline rates · king-starline-market-rate-list",
+    "folder": "Arena / Payout Rates / All Game Rates",
+    "method": "GET",
+    "url": "{{admin_api}}/king-starline-market-rate-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/king-starline-market-rate-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "cbdf3d63-9203-4a21-af61-242a30a0a719",
+    "name": "Save King Starline rates · king-starline-market-rate-update",
+    "folder": "Arena / Payout Rates / All Game Rates",
+    "method": "POST",
+    "url": "{{admin_api}}/king-starline-market-rate-update",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/king-starline-market-rate-update",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "b1c9091f-ee30-47d4-a8d4-0868be9412ef",
+    "name": "List King Jackpot rates · king-jackport-market-rate-list",
+    "folder": "Arena / Payout Rates / All Game Rates",
+    "method": "GET",
+    "url": "{{admin_api}}/king-jackport-market-rate-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/king-jackport-market-rate-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "6d2aeda0-a00c-4e81-ae21-cb6f589cc381",
+    "name": "Save King Jackpot rates · king-jackport-market-rate-update",
+    "folder": "Arena / Payout Rates / All Game Rates",
+    "method": "POST",
+    "url": "{{admin_api}}/king-jackport-market-rate-update",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/king-jackport-market-rate-update",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "75ee9fa0-5ee6-44b2-ae69-54b5f77a1364",
+    "name": "Read one player's profile · user-get-single",
+    "folder": "Arena / Payout Rates / All Game Rates › Player Game Rates",
+    "method": "GET",
+    "url": "{{admin_api}}/user-get-single?user_id={{player_user_id}}",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/user-get-single?user_id={{player_user_id}}",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "5569a1c3-3cc7-4e20-ade4-6924d44a0a84",
+    "name": "List a player's main market rates · main-market-rate-list-user-waise",
+    "folder": "Arena / Payout Rates / All Game Rates › Player Game Rates",
+    "method": "GET",
+    "url": "{{admin_api}}/main-market-rate-list-user-waise?user_id={{player_user_id}}",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/main-market-rate-list-user-waise?user_id={{player_user_id}}",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "5a82afe9-c2ed-4836-aafb-4e2876c5d569",
+    "name": "List a player's King Starline rates · starline-market-rate-list-user-waise",
+    "folder": "Arena / Payout Rates / All Game Rates › Player Game Rates",
+    "method": "GET",
+    "url": "{{admin_api}}/starline-market-rate-list-user-waise?user_id={{player_user_id}}",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/starline-market-rate-list-user-waise?user_id={{player_user_id}}",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "ca2efa5a-5ece-4e14-a6b7-e521c228f195",
+    "name": "Switch a player to custom rates · user-update-manage-game-rate",
+    "folder": "Arena / Payout Rates / All Game Rates › Player Game Rates",
+    "method": "GET",
+    "url": "{{admin_api}}/user-update-manage-game-rate?user_id={{player_user_id}}&game_rate_manage=yes",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/user-update-manage-game-rate?user_id={{player_user_id}}&game_rate_manage=yes",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "d39994fc-bfb5-43b6-a516-173a36350f85",
+    "name": "Save a player's main market rates · main-market-rate-update-user-waise",
+    "folder": "Arena / Payout Rates / All Game Rates › Player Game Rates",
+    "method": "POST",
+    "url": "{{admin_api}}/main-market-rate-update-user-waise",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/main-market-rate-update-user-waise",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "7323c854-6194-4f16-a02f-9003c3d1de05",
+    "name": "Save a player's King Starline rates · king-starline-market-rate-update-user-waise",
+    "folder": "Arena / Payout Rates / All Game Rates › Player Game Rates",
+    "method": "POST",
+    "url": "{{admin_api}}/king-starline-market-rate-update-user-waise",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/king-starline-market-rate-update-user-waise",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "8a57697c-1e4c-4e30-ae4f-007215793138",
+    "name": "Switch a player back to house rates · user-update-manage-game-rate",
+    "folder": "Arena / Payout Rates / All Game Rates › Player Game Rates",
+    "method": "GET",
+    "url": "{{admin_api}}/user-update-manage-game-rate?user_id={{player_user_id}}&game_rate_manage=no",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/user-update-manage-game-rate?user_id={{player_user_id}}&game_rate_manage=no",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "266b5cd0-cab1-45f8-ad7a-aa58d5cbae7f",
+    "name": "List the live markets of one type · market-list-all",
+    "folder": "Intel / Bet History / Pending Bets",
+    "method": "GET",
+    "url": "{{admin_api}}/market-list-all?market_type=mainmarket",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/market-list-all?market_type=mainmarket",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "5e3588f6-7785-45ac-a52f-305a470726db",
+    "name": "List the game types of a market type · game-list-all",
+    "folder": "Intel / Bet History / Pending Bets",
+    "method": "GET",
+    "url": "{{admin_api}}/game-list-all?market_type=mainmarket",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/game-list-all?market_type=mainmarket",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "907df483-3248-45b4-a5b8-524b3e518e73",
+    "name": "List bids waiting for a result · gameloadbet-list",
+    "folder": "Intel / Bet History / Pending Bets",
+    "method": "GET",
+    "url": "{{admin_api}}/gameloadbet-list?page=1",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/gameloadbet-list?page=1",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "275352ea-dd4a-419c-a9b1-f994d323511a",
+    "name": "List one player's bids waiting for a result · gameloadbet-pending-list-userwaise",
+    "folder": "Intel / Bet History / Pending Bets › Player Bet History",
+    "method": "GET",
+    "url": "{{admin_api}}/gameloadbet-pending-list-userwaise?page=1&limit=20&user_id={{player_user_id}}",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/gameloadbet-pending-list-userwaise?page=1&limit=20&user_id={{player_user_id}}",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "e6be2173-a8b8-4ac4-aa12-228cb83c9f49",
+    "name": "List one player's settled bids · gameloadbet-success-list-userwaise",
+    "folder": "Intel / Bet History / Pending Bets › Player Bet History",
+    "method": "GET",
+    "url": "{{admin_api}}/gameloadbet-success-list-userwaise?page=1&limit=20&user_id={{player_user_id}}",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/gameloadbet-success-list-userwaise?page=1&limit=20&user_id={{player_user_id}}",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "3e0abd65-1fcf-468d-a063-259b6d398ef8",
+    "name": "List winning settled bids · gameloadbet-success-list",
+    "folder": "Intel / Bet History / Winning Bets",
+    "method": "GET",
+    "url": "{{admin_api}}/gameloadbet-success-list?page=1",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/gameloadbet-success-list?page=1",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "0ae483b8-8fba-4094-a2a7-8904b7d3db94",
+    "name": "List losing settled bids · gameloadbet-loss-list",
+    "folder": "Intel / Bet History / Losing Bets",
+    "method": "GET",
+    "url": "{{admin_api}}/gameloadbet-loss-list?page=1",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/gameloadbet-loss-list?page=1",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "0bb3b365-769d-46d5-a493-2d61f9eb32f1",
+    "name": "Show profit and loss per settlement day · game-report-datewaise",
+    "folder": "Intel / Bet Reports / Date-wise Bet Report",
+    "method": "POST",
+    "url": "{{admin_api}}/game-report-datewaise?page=1",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/game-report-datewaise?page=1",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "bd7a1482-d874-463e-a4f9-e39be6106fc4",
+    "name": "Split one day's profit and loss by market type · game-report-marketTypewaise",
+    "folder": "Intel / Bet Reports / Date-wise Bet Report › Market-Type Bet Report",
+    "method": "POST",
+    "url": "{{admin_api}}/game-report-marketTypewaise",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/game-report-marketTypewaise",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "23173e9a-8fd5-42c6-ad5a-83c221baf678",
+    "name": "Split one day and market type by market · game-report-marketIdwaise",
+    "folder": "Intel / Bet Reports / Date-wise Bet Report › Market Bet Report",
+    "method": "POST",
+    "url": "{{admin_api}}/game-report-marketIdwaise",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/game-report-marketIdwaise",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "4e02d5ef-1c3f-434a-a0dc-ce69000affab",
+    "name": "List every settled bid of one market on one day · game-report-marketIdAndMarketTypeAll",
+    "folder": "Intel / Bet Reports / Market & Type Report",
+    "method": "POST",
+    "url": "{{admin_api}}/game-report-marketIdAndMarketTypeAll",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/game-report-marketIdAndMarketTypeAll",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "3988cbbc-994e-49c4-a799-1629ffb460af",
+    "name": "Read the app settings · app-setting-list",
+    "folder": "System / App Settings / App Setting",
+    "method": "GET",
+    "url": "{{admin_api}}/app-setting-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/app-setting-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "9ee872d2-585e-4c10-afc1-b17d70dd21e0",
+    "name": "Change app settings · app-setting-update",
+    "folder": "System / App Settings / App Setting",
+    "method": "POST",
+    "url": "{{admin_api}}/app-setting-update",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/app-setting-update",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "cbd5f9f8-225d-4422-af76-75f959634f24",
+    "name": "List the WhatsApp and call numbers · contact-number-list",
+    "folder": "System / App Settings / Contact Numbers",
+    "method": "GET",
+    "url": "{{admin_api}}/contact-number-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/contact-number-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "f3e43703-a4dd-4459-a496-0ad53eb2e0bb",
+    "name": "Add a WhatsApp or call number · contact-number-add",
+    "folder": "System / App Settings / Contact Numbers",
+    "method": "POST",
+    "url": "{{admin_api}}/contact-number-add",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/contact-number-add",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "c6377bfb-4701-4858-a47b-e4939166fde4",
+    "name": "Edit a contact number · contact-number-update",
+    "folder": "System / App Settings / Contact Numbers",
+    "method": "POST",
+    "url": "{{admin_api}}/contact-number-update",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/contact-number-update",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "5761385d-7b1f-46eb-a009-3fe43897de1c",
+    "name": "Make a contact number the main one · contact-number-primary",
+    "folder": "System / App Settings / Contact Numbers",
+    "method": "POST",
+    "url": "{{admin_api}}/contact-number-primary",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/contact-number-primary",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "e15afee5-ef75-4ce5-a61c-6e44bb5c3c53",
+    "name": "Remove a contact number · contact-number-delete",
+    "folder": "System / App Settings / Contact Numbers",
+    "method": "POST",
+    "url": "{{admin_api}}/contact-number-delete",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/contact-number-delete",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "367a1774-7753-49b1-a803-a634d61840b0",
+    "name": "Read the blocked-screen support setting · blocked-support-settings",
+    "folder": "System / App Settings / Contact Numbers",
+    "method": "GET",
+    "url": "{{admin_api}}/blocked-support-settings",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/blocked-support-settings",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "675a8f85-eb98-41a8-a2de-a94a6c4010d0",
+    "name": "Find players for the blocked-screen support list · blocked-support-players",
+    "folder": "System / App Settings / Contact Numbers",
+    "method": "GET",
+    "url": "{{admin_api}}/blocked-support-players?q={{player_username}}",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/blocked-support-players?q={{player_username}}",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "368aca79-a39f-49cd-af6c-50b8e5ec1f02",
+    "name": "Save the blocked-screen support setting · blocked-support-settings",
+    "folder": "System / App Settings / Contact Numbers",
+    "method": "POST",
+    "url": "{{admin_api}}/blocked-support-settings",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/blocked-support-settings",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "f43a6d6d-9f6c-48a5-a2db-790c2d654073",
+    "name": "Read the colour payouts · color-setting-list",
+    "folder": "System / App Settings / Colour Settings",
+    "method": "GET",
+    "url": "{{admin_api}}/color-setting-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/color-setting-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "c0f863f4-8e39-4b67-abef-ac4de6765d79",
+    "name": "Change the colour payouts · color-setting-update",
+    "folder": "System / App Settings / Colour Settings",
+    "method": "POST",
+    "url": "{{admin_api}}/color-setting-update",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/color-setting-update",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "fd007a80-d5bc-455e-ac46-46e8f6f1b965",
+    "name": "Add a how-to-play video · video-store",
+    "folder": "System / App Settings / Video Lists",
+    "method": "POST",
+    "url": "{{admin_api}}/video-store",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/video-store",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "b13e551e-3655-46bb-a807-aeff49cff4c0",
+    "name": "List the how-to-play videos · video-list",
+    "folder": "System / App Settings / Video Lists",
+    "method": "GET",
+    "url": "{{admin_api}}/video-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/video-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "5f555967-e167-4b2b-a429-b106a6432d8b",
+    "name": "Delete a how-to-play video · video-delete",
+    "folder": "System / App Settings / Video Lists",
+    "method": "POST",
+    "url": "{{admin_api}}/video-delete",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/video-delete",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "8539ffbd-e52a-4347-a38c-6bd51040d3b1",
+    "name": "Add a home slider image · slider-store",
+    "folder": "System / App Settings / Home Sliders",
+    "method": "POST",
+    "url": "{{admin_api}}/slider-store",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/slider-store",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "e56698a0-ce20-4515-a189-e14a0e944bed",
+    "name": "List the home slider images · slider-list",
+    "folder": "System / App Settings / Home Sliders",
+    "method": "GET",
+    "url": "{{admin_api}}/slider-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/slider-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "7e30e0c3-bc89-44fa-a936-20f08b7f92df",
+    "name": "Delete a home slider image · slider-delete",
+    "folder": "System / App Settings / Home Sliders",
+    "method": "POST",
+    "url": "{{admin_api}}/slider-delete",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/slider-delete",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "642a8acf-9c64-4124-a6d9-dded1c39b516",
+    "name": "List players' submitted ideas · idea-submit-list",
+    "folder": "System / App Settings / Idea Submissions",
+    "method": "GET",
+    "url": "{{admin_api}}/idea-submit-list?page=1",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/idea-submit-list?page=1",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "438b5aa4-0897-40ec-a9cf-618630c238c3",
+    "name": "Delete a submitted idea · idea-submit-delete",
+    "folder": "System / App Settings / Idea Submissions",
+    "method": "GET",
+    "url": "{{admin_api}}/idea-submit-delete?id={{idea_id}}",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/idea-submit-delete?id={{idea_id}}",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "58b7cdb9-8f5b-43ca-aaf1-b99e6adbf899",
+    "name": "List the notice board notices · noticeboard-list",
+    "folder": "System / Notices / Notice Boards",
+    "method": "GET",
+    "url": "{{admin_api}}/noticeboard-list?page=1&limit=10",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/noticeboard-list?page=1&limit=10",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "2782c5cf-1566-4c9a-aaf1-929353a29b15",
+    "name": "Post the notice board notice · noticeboard-store",
+    "folder": "System / Notices / Notice Boards",
+    "method": "POST",
+    "url": "{{admin_api}}/noticeboard-store",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/noticeboard-store",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "dc532b5c-6d0b-4cf5-a477-3562c1f5e169",
+    "name": "Edit the notice board notice · noticeboard-update",
+    "folder": "System / Notices / Notice Boards",
+    "method": "POST",
+    "url": "{{admin_api}}/noticeboard-update",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/noticeboard-update",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "dfc72b12-14e0-4b4a-ae49-2c4c00ac30bf",
+    "name": "Delete the notice board notice · noticeboard-delete",
+    "folder": "System / Notices / Notice Boards",
+    "method": "POST",
+    "url": "{{admin_api}}/noticeboard-delete",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/noticeboard-delete",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "f5f48942-79b7-4290-aee0-fdd5c02c8643",
+    "name": "List markets for a result upload · market-list-manualResult",
+    "folder": "System / Result Upload / Manual Result Upload",
+    "method": "POST",
+    "url": "{{admin_api}}/market-list-manualResult",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/market-list-manualResult",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "e0b1ef98-c319-458a-a78c-4456534b49bc",
+    "name": "Upload chart results by hand · add-manual-result",
+    "folder": "System / Result Upload / Manual Result Upload",
+    "method": "POST",
+    "url": "{{admin_api}}/add-manual-result",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/add-manual-result",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "5dd74762-8b3e-4fce-a180-c92c080efe15",
+    "name": "Upload chart results from a CSV file · result-create-csv",
+    "folder": "System / Result Upload / CSV Result Upload",
+    "method": "POST",
+    "url": "{{admin_api}}/result-create-csv",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/result-create-csv",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "e6230e9c-8ba7-4978-a9e3-3637ba1f3452",
+    "name": "List the states and the geo switch · state-access-list",
+    "folder": "Access / Geography / Allowed States",
+    "method": "GET",
+    "url": "{{admin_api}}/state-access-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/state-access-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "02407d2e-53c6-4d53-ad90-b104a1945524",
+    "name": "Save allowed states or the geo switch · state-access-update",
+    "folder": "Access / Geography / Allowed States",
+    "method": "POST",
+    "url": "{{admin_api}}/state-access-update",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/state-access-update",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "81dfd416-6993-4d1b-a625-e6c16736ff41",
+    "name": "List IP rules across all states · ip-rules-list",
+    "folder": "Access / Geography / Allowed States",
+    "method": "POST",
+    "url": "{{admin_api}}/ip-rules-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/ip-rules-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "15f73b39-3562-4be8-ac2d-c392c9067484",
+    "name": "List one state's IP rules · ip-whitelist-list",
+    "folder": "Access / Geography / Allowed States",
+    "method": "POST",
+    "url": "{{admin_api}}/ip-whitelist-list",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/ip-whitelist-list",
+    "writeGuard": false,
+    "sensitiveRead": false
+  },
+  {
+    "id": "9d5d49ac-1b7c-46a3-a59c-3959dd837388",
+    "name": "Add an IP rule for a state · ip-whitelist-add",
+    "folder": "Access / Geography / Allowed States",
+    "method": "POST",
+    "url": "{{admin_api}}/ip-whitelist-add",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/ip-whitelist-add",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "e1366e31-a1d8-4ee4-a96d-231540ceaf5a",
+    "name": "Edit or switch off an IP rule · ip-whitelist-update",
+    "folder": "Access / Geography / Allowed States",
+    "method": "POST",
+    "url": "{{admin_api}}/ip-whitelist-update",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/ip-whitelist-update",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "850c7a2d-7122-4ee9-a799-3019ae7c6573",
+    "name": "Delete an IP rule · ip-whitelist-delete",
+    "folder": "Access / Geography / Allowed States",
+    "method": "POST",
+    "url": "{{admin_api}}/ip-whitelist-delete",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/ip-whitelist-delete",
+    "writeGuard": true,
+    "sensitiveRead": false
+  },
+  {
+    "id": "be7cc251-e561-4e42-aaf3-8fc05b661f31",
+    "name": "Block an IP address everywhere · ip-block-add",
+    "folder": "Access / IP Rules / Blocked Addresses",
+    "method": "POST",
+    "url": "{{admin_api}}/ip-block-add",
+    "resolvedUrl": "https://adminapis.rcbmatka.com/api/ip-block-add",
+    "writeGuard": true,
+    "sensitiveRead": false
+  }
+]

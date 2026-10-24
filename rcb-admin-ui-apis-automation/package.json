@@ -1,0 +1,27 @@
+{
+  "name": "rcb-admin-ui-apis-automation",
+  "version": "1.0.0",
+  "description": "RCB Admin UI APIs Automation with Newman and HTML Word PDF evidence",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "node scripts/prepare.cjs",
+    "test": "node scripts/run.cjs",
+    "report": "node scripts/report.cjs",
+    "verify": "node scripts/verify.cjs",
+    "test:complete": "node scripts/run-complete.cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "docx": "9.13.0",
+    "newman": "6.2.3",
+    "pdfkit": "0.20.2"
+  },
+  "private": true,
+  "devDependencies": {
+    "@napi-rs/canvas": "1.0.13",
+    "pdfjs-dist": "6.4.299"
+  }
+}
